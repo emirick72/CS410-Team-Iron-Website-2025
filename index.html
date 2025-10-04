@@ -19,7 +19,7 @@
 
         /* Navigation */
         nav {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4db8a8 0%, #3d7a5e 100%);
             padding: 1rem 2rem;
             position: fixed;
             width: 100%;
@@ -66,7 +66,7 @@
 
         /* Home Page */
         .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4db8a8 0%, #3d7a5e 100%);
             color: white;
             padding: 120px 2rem 80px;
             text-align: center;
@@ -76,6 +76,22 @@
             font-size: 3.5rem;
             margin-bottom: 1rem;
             animation: fadeInUp 0.8s ease-out;
+        }
+        .hero-logo {
+            width : 400px;
+            height: 400px;
+            margin: 2rem auto;
+            animation: fadeInUp .8s ease-out 0.2s backwards;
+            filter: drop-shadow(0 8px 20px rgba(0,0,0,0.3));
+
+        }
+        .hero-tagline {
+            font-size:1.7rem;
+            margin-bottom: 2.1rem;
+            opacity: 1;
+            animation: fadeInUp 0.8s ease-out 0.3s backwards;
+            font-style: italic;
+            font-weight: 500;
         }
 
         .hero p {
@@ -87,7 +103,7 @@
 
         .cta-button {
             background: white;
-            color: #667eea;
+            color: #4db8a8;
             padding: 1rem 2.5rem;
             border: none;
             border-radius: 50px;
@@ -144,7 +160,7 @@
         .feature-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
-            color: #667eea;
+            color: #4db8a8;
         }
 
         /* Presentation Page */
@@ -164,7 +180,27 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 80px 2rem;
+            background: white;
         }
+
+        .iframe-content {
+            position: relative;
+            width: 100%;
+            padding-bottom: 60%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .iframe-content iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
 
         .slide {
             background: white;
@@ -241,6 +277,66 @@
                 font-size: 2rem;
             }
         }
+        .team-hero {
+            background: linear-gradient(135deg, #4db8a8 0%, #3d7a5e 100%);
+            color: white;
+            padding: 120px 2rem 80px;
+            text-align: center;
+        }
+        .team-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .team-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 2rem;
+            background: #f8f9fa;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+        .team-mem {
+            background: white;
+            padding: 2rem;
+            border-radius: 18px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .team-mem:hover {
+            transform: translateY(-11px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .team-mem-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(140deg, #4db8a8 0%, #3d7a5e 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+        .team-mem h3 {
+            color: #4db8a8;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .team-mem .role {
+            color: #4db8a8;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        .team-mem p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
     </style>
 </head>
 <body>
@@ -250,6 +346,7 @@
             <li class="logo">TrashTag</li>
             <li><a onclick="showPage('home')">Home</a></li>
             <li><a onclick="showPage('presentation')">Presentation</a></li>
+            <li><a onclick="showPage('team')">Team</a></li>
         </ul>
     </nav>
 
@@ -257,7 +354,8 @@
     <div id="home" class="page active">
         <section class="hero">
             <h1>Welcome to Our Project</h1>
-            <p>TrashTag is an application dedicated to improving public litter cleanup and keeping our enviornment clean beautiful</p>
+            <img src="trashtag-logo.png" alt="TrashTag Logo" class="hero-logo" >
+            <p class="hero-tagline">If you can't take it, TAG it!</p>
             <button class="cta-button" onclick="showPage('presentation')">Learn More</button>
         </section>
 
@@ -285,17 +383,72 @@
         <section class="presentation-hero">
             <h1>Presentations</h1>
             <p>Check out our presentations for CS410W and CS411W</p>
-        <div class="slide">
-            <h2>Our Presentation Slides</h2>
-            <p>View our detailed presentation below:</p>
-            <div style="position: relative; padding-bottom: 59.27%; height: 0; overflow: hidden; margin-top: 2rem;">
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQNwcjEzbl4-T91SM9CsikE7RbYovYY3nVfPm_tpJmoCdu_N91z5df8aaJtVJ-0vmcCIzf5JQDEXNcE/pubembed?start=false&loop=false&delayms=60000" 
-                frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
-                </iframe>
-            </div>
-        </div>
         </section>
+
+        <section class="presentation-content">
+            <div class="iframe-content">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQNwcjEzbl4-T91SM9CsikE7RbYovYY3nVfPm_tpJmoCdu_N91z5df8aaJtVJ-0vmcCIzf5JQDEXNcE/pubembed?" allowfullscreen="true"></iframe>
+        </div>
+    </section>
     </div>
+
+
+    <div id="team" class="page">
+    <section class="team-hero">
+        <h1>Meet Team Iron</h1>
+        <p> This Is Our Story </p>
+    </section>
+    <section class="team-content">
+        <div class="team-grid">
+        <div class="team-mem">
+            <div class="team-mem-image">placeholder</div>
+            <h3>Scott Zumwalt</h3>
+            <p class="role">Team Lead</p>
+            <p> Description placeholder</p>
+        </div>
+
+
+        <div class="team-mem">
+            <div class="team-mem-image">placeholder</div>
+            <h3>Sara Perez</h3>
+            <p class="role">Front End Developer & Document Specialist</p>
+            <p>  Sara is a full-time computer science student at ODU. She completed her associates in engineering and hopes to obtain her masters in computer science in the near future.</p>
+        </div>
+        <div class="team-mem">
+            <div class="team-mem-image">placeholder</div>
+            <h3>Emily Rick</h3>
+            <p class="role">Full Stack Developer</p>
+            <p> Emily is a full-time senior studying Computer Science at ODU. She plans to go on to obtain her Master’s degree in Computer Science after graduating with her Bachelor’s degree in May 2026.</p>
+        </div>
+        <div class="team-mem">
+            <div class="team-mem-image">placeholder</div>
+            <h3>Teddy Kovacs</h3>
+            <p class="role">Back End Developer & Database Design</p>
+            <p> Description placeholder</p>
+        </div>
+        <div class="team-mem">
+            <div class="team-mem-image">placeholder</div>
+            <h3>Luca Brooks</h3>
+            <p class="role">Back End Developer & Test Analyst</p>
+            <p> Luca is a published first author on an interdisciplinary paper in Computer Science and Human Factors Psychology. They are a senior in computer science with plans to do a master’s in computer science.</p>
+        </div>
+
+
+        <div class="team-mem">
+            <div class="team-mem-image">placeholder</div>
+            <h3>Adam Daif</h3>
+            <p class="role">Full Stack Developer & GIS Specialist</p>
+            <p> Adam is currently a full-stack web developer at Vivian Contracting LLC. In addition to CS, he is doing a minor in data science and plans to pursue a master’s in computational analytics.</p>
+        </div>
+        <div class="team-mem">
+            <div class="team-mem-image">placeholder</div>
+            <h3>Ryan Fee</h3>
+            <p class="role">Full Stack Developer</p>
+            <p> Description placeholder</p>
+        </div>
+        </div>
+
+    </section>
 
     <script>
         function showPage(pageId) {
