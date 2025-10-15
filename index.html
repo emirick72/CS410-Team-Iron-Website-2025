@@ -343,6 +343,87 @@
             object-fit: cover;
             border-radius: 50%;
         }
+        .trashtag-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 55px 2rem;
+            background: white;
+        }
+        .trashtag-section h2 {
+            font-size: 2.6rem;
+            color: #4db8a8;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            border-left: 5px solid #4db8a8;
+            padding-left: 1rem;
+        }
+        .trashtag-section h3 {
+            font-size: 2.1rem;
+            color: #3d7a5e;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .trashtag-section p {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            margin-bottom:1.6rem;
+            color: #555;
+        }
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .presentation-item {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 2.8rem;
+            border-radius: 17px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+        }
+        .presentation-item h3 {
+            color:#4db8a8;
+            font-size: 1.9rem;
+            margin-bottom: 1.1rem;
+        }
+        .presentation-link {
+            display: inline-block;
+            background: #4db8a8;
+            color: white;
+            padding: 1.1rem 2.1rem;
+            border-radius: 53px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background 0.5s;
+        }
+        .presentation-link:hover {
+            background: #3d7a5e;
+        }
+        .references-item, .glossery-item {
+            background: white;
+            padding: 1.8rem;
+            margin-bottom: 1.8rem;
+            border-radius: 13px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.09);
+        }
+        .glossary-term {
+            font-weight: 680;
+            color: #4db8a8;
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+
+        }
+        .footer-links {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .footer-links a {
+            color: #4db8a8;
+            text-decoration: none;
+            margin: 1 1.02rem;
+            transition: opacity 0.5s;
+        }
         
     </style>
 </head>
@@ -354,6 +435,9 @@
             <li><a onclick="showPage('home')">Home</a></li>
             <li><a onclick="showPage('presentation')">Presentation</a></li>
             <li><a onclick="showPage('team')">Team</a></li>
+            <li><a onclick="showPage('references')">References</a></li>
+            <li><a onclick="showPage('glossary')">Glossary</a></li>
+
         </ul>
     </nav>
 
@@ -365,6 +449,30 @@
             <p class="hero-tagline">If you can't take it, TAG it!</p>
             <button class="cta-button" onclick="showPage('presentation')">Learn More</button>
         </section>
+        <section class="trashtag-section">
+            <h2>Elevator Pitch</h2>
+            <p> PLACEHOLDER </p>
+            <h2> Problem Description</h2>
+            <p> PLACEHOLDER</p>
+            <p> Key Issues:</p>
+            <ul>
+                <li>PLACEHOLDER</li>
+                <li>PLACEHOLDER</li>
+                <li>PLACEHOLDER</li>
+            </ul>
+            
+            <h2> Customer and End User</h2>
+            <h3> Primary Users</h3>
+            <p><Strong> PLACEHOLDER:</Strong> PLACEHOLDER</p>
+            <h3> Secondary Users</h3>
+            <p><Strong> PLACEHOLDER:</Strong> PLACEHOLDER</p>
+
+            <h2> Solution Statement</h2>
+            <p> PLACEHOLDER</p>
+
+        </section>
+
+
 
         <section class="features">
             <h2>Features</h2>
@@ -393,9 +501,23 @@
         </section>
 
         <section class="presentation-content">
+        <div class="presentation-item">
+            <h3> Iteration 3</h3>
+            <a href="PDF_PLACEHOLDER.pdf" class="presentation-link" target="_blank"> Presentation PDF</a>
             <div class="iframe-content">
-            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQNwcjEzbl4-T91SM9CsikE7RbYovYY3nVfPm_tpJmoCdu_N91z5df8aaJtVJ-0vmcCIzf5JQDEXNcE/pubembed?" allowfullscreen="true"></iframe>
+                <iframe src="PRESENTATION LINK PLACEHOLDER" allowfullscreen="true"></iframe>
+
+            </div>
         </div>
+            <div class="presentation-item">
+                <h3> Iteration 2</h3>
+                <a href="PDF_PLACEHOLDER.pdf" class="presentation-link" target="_blank"> Presentation PDF</a>
+                </div>
+            <div class="presentation-item">
+                <h3> Iteration 1</h3>
+                <a href="PDF_PLACEHOLDER.pdf" class="presentation-link" target="_blank"> Presentation PDF</a>
+            </div>
+
     </section>
     </div>
 
@@ -471,6 +593,135 @@
         </div>
 
     </section>
+    </div>
+    <div id="references" class="page">
+        <section class="hero">
+            <h1>References</h1>
+            <p>Trashtag Reference Material</p>
+        </section>
+
+        <section class="trashtag-section">
+            <div class="reference-item">
+                <p><strong>[1]</strong>CITATION PLACEHOLDER</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[2]</strong>CITATION PLACEHOLDER</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[3]</strong>CITATION PLACEHOLDER</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[4]</strong>CITATION PLACEHOLDER</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[5]</strong>CITATION PLACEHOLDER</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[6]</strong>CITATION PLACEHOLDER</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[7]</strong>CITATION PLACEHOLDER</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[8]</strong>CITATION PLACEHOLDER</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[9]</strong>CITATION PLACEHOLDER</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[10]</strong>CITATION PLACEHOLDER</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[11]</strong>CITATION PLACEHOLDER</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[12]</strong>CITATION PLACEHOLDER</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[13]</strong>CITATION PLACEHOLDER</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[14]</strong>CITATION PLACEHOLDER</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[15]</strong>CITATION PLACEHOLDER</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[16]</strong>CITATION PLACEHOLDER</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[17]</strong>CITATION PLACEHOLDER</p>
+            </div>
+
+
+        </section>
+    </div>
+
+    <div id="glossary" class="page">
+        <section class="hero">
+        <h1>Glossary</h1>
+        <p>Key Terms and their respective defintions </p>
+        </section>
+
+        <section class="trashtag-section">
+            <div class="glossary-item">
+                <div class="glossary-term">PLACEHOLDER FOR TERM</div>
+                <p>DEFINITION FOR TERM PLACEHOLDER</p>
+            </div>
+
+            <div class="glossary-item">
+                <div class="glossary-term">PLACEHOLDER FOR TERM</div>
+                <p>DEFINITION FOR TERM PLACEHOLDER</p>
+            </div>
+
+            <div class="glossary-item">
+                <div class="glossary-term">PLACEHOLDER FOR TERM</div>
+                <p>DEFINITION FOR TERM PLACEHOLDER</p>
+            </div>
+
+            <div class="glossary-item">
+                <div class="glossary-term">PLACEHOLDER FOR TERM</div>
+                <p>DEFINITION FOR TERM PLACEHOLDER</p>
+            </div>
+
+            <div class="glossary-item">
+                <div class="glossary-term">PLACEHOLDER FOR TERM</div>
+                <p>DEFINITION FOR TERM PLACEHOLDER</p>
+            </div>
+
+            <div class="glossary-item">
+                <div class="glossary-term">PLACEHOLDER FOR TERM</div>
+                <p>DEFINITION FOR TERM PLACEHOLDER</p>
+            </div>
+
+            <div class="glossary-item">
+                <div class="glossary-term">PLACEHOLDER FOR TERM</div>
+                <p>DEFINITION FOR TERM PLACEHOLDER</p>
+            </div>
+
+            <div class="glossary-item">
+                <div class="glossary-term">PLACEHOLDER FOR TERM</div>
+                <p>DEFINITION FOR TERM PLACEHOLDER</p>
+            </div>
+
+        </section>
+    </div>
 
     <script>
         function showPage(pageId) {
@@ -482,6 +733,16 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
+    <footer class="footer-links">
+        <p>
+            <a href="ODU WEBSITE LINK PLACEHOLDER" target="_blank">Old Dominion University</a>
+            <a href="ODU WEBSITE LINK PLACEHOLDER" target="_blank">Old Dominion University-Computer Science Department</a>
+
+
+        </p>
+        <p style ="margin-top: 1.5rem; opacity: 0.7;" > Copyright 2025 Team Iron:Trashtag</p>
+
+    </footer>
 </body>
 
 </html>
