@@ -19,7 +19,7 @@
 
         /* Navigation */
         nav {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4db8a8 0%, #3d7a5e 100%);
             padding: 1rem 2rem;
             position: fixed;
             width: 100%;
@@ -51,6 +51,7 @@
             font-size: 1.5rem;
             font-weight: bold;
             margin-right: auto;
+            color: white;
         }
 
         /* Pages */
@@ -66,7 +67,7 @@
 
         /* Home Page */
         .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4db8a8 0%, #3d7a5e 100%);
             color: white;
             padding: 120px 2rem 80px;
             text-align: center;
@@ -76,6 +77,22 @@
             font-size: 3.5rem;
             margin-bottom: 1rem;
             animation: fadeInUp 0.8s ease-out;
+        }
+        .hero-logo {
+            width : 400px;
+            height: 400px;
+            margin: 2rem auto;
+            animation: fadeInUp .8s ease-out 0.2s backwards;
+            filter: drop-shadow(0 8px 20px rgba(0,0,0,0.3));
+
+        }
+        .hero-tagline {
+            font-size:1.7rem;
+            margin-bottom: 2.1rem;
+            opacity: 1;
+            animation: fadeInUp 0.8s ease-out 0.3s backwards;
+            font-style: italic;
+            font-weight: 500;
         }
 
         .hero p {
@@ -87,7 +104,7 @@
 
         .cta-button {
             background: white;
-            color: #667eea;
+            color: #4db8a8;
             padding: 1rem 2.5rem;
             border: none;
             border-radius: 50px;
@@ -144,12 +161,12 @@
         .feature-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
-            color: #667eea;
+            color: #4db8a8;
         }
 
         /* Presentation Page */
         .presentation-hero {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            background: linear-gradient(135deg, #4db8a8 0%, #3d7a5e 100%);
             color: white;
             padding: 120px 2rem 80px;
             text-align: center;
@@ -164,7 +181,27 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 80px 2rem;
+            background: white;
         }
+
+        .iframe-content {
+            position: relative;
+            width: 100%;
+            padding-bottom: 60%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .iframe-content iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
 
         .slide {
             background: white;
@@ -241,6 +278,154 @@
                 font-size: 2rem;
             }
         }
+        .team-hero {
+            background: linear-gradient(135deg, #4db8a8 0%, #3d7a5e 100%);
+            color: white;
+            padding: 120px 2rem 80px;
+            text-align: center;
+        }
+        .team-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .team-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 2rem;
+            background: #f8f9fa;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+        .team-mem {
+            background: white;
+            padding: 2rem;
+            border-radius: 18px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .team-mem:hover {
+            transform: translateY(-11px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .team-mem-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(140deg, #4db8a8 0%, #3d7a5e 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+        .team-mem h3 {
+            color: #4db8a8;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .team-mem .role {
+            color: #4db8a8;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        .team-mem p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .team-mem-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .trashtag-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 55px 2rem;
+            background: white;
+        }
+        .trashtag-section h2 {
+            font-size: 2.6rem;
+            color: #4db8a8;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            border-left: 5px solid #4db8a8;
+            padding-left: 1rem;
+        }
+        .trashtag-section h3 {
+            font-size: 2.1rem;
+            color: #3d7a5e;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .trashtag-section p {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            margin-bottom:1.6rem;
+            color: #555;
+        }
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .presentation-item {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 2.8rem;
+            border-radius: 17px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .presentation-item h3 {
+            color:#4db8a8;
+            font-size: 1.9rem;
+            margin-bottom: 1.1rem;
+        }
+        .presentation-link {
+            display: inline-block;
+            background: #4db8a8;
+            color: white;
+            padding: 1.1rem 2.1rem;
+            border-radius: 53px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background 0.5s;
+        }
+        .presentation-link:hover {
+            background: #3d7a5e;
+        }
+        .references-item, .glossery-item {
+            background: white;
+            padding: 1.8rem;
+            margin-bottom: 1.8rem;
+            border-radius: 13px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.09);
+        }
+        .glossary-term {
+            font-weight: 680;
+            color: #4db8a8;
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+
+        }
+        .footer-links {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .footer-links a {
+            color: #4db8a8;
+            text-decoration: none;
+            margin: 1 1.02rem;
+            transition: opacity 0.5s;
+        }
+        
     </style>
 </head>
 <body>
@@ -250,6 +435,10 @@
             <li class="logo">TrashTag</li>
             <li><a onclick="showPage('home')">Home</a></li>
             <li><a onclick="showPage('presentation')">Presentation</a></li>
+            <li><a onclick="showPage('team')">Team</a></li>
+            <li><a onclick="showPage('references')">References</a></li>
+            <li><a onclick="showPage('glossary')">Glossary</a></li>
+
         </ul>
     </nav>
 
@@ -257,9 +446,47 @@
     <div id="home" class="page active">
         <section class="hero">
             <h1>Welcome to Our Project</h1>
-            <p>TrashTag is an application dedicated to improving public litter cleanup and keeping our enviornment clean beautiful</p>
+            <img src="trashtag-logo.png" alt="TrashTag Logo" class="hero-logo" >
+            <p class="hero-tagline">If you can't take it, TAG it!</p>
             <button class="cta-button" onclick="showPage('presentation')">Learn More</button>
         </section>
+        <section class="trashtag-section">
+            <h2>Elevator Pitch</h2>
+            <iframe src="Assets/TrashTag_Pitch_Document.pdf" width="100%" height="600px"></iframe>
+            <h2> Problem Description</h2>
+            <p style = "text-align: justify;">Outdoor recreation areas such as parks, rivers, lakes, and beaches accumulate large amounts of
+ trash. Many independent organizations and local governments spend time and resources
+ trawling these areas looking for litter, debris, and dumping to clean up. Not everyone that visits
+ these locations are capable or ready to pick up large amounts of trash. Some large litter and
+ dumping requires planning and/or equipment for proper and safe removal. Many of these areas
+ are also very large and clean up crews must walk great distances in search of any trash that must
+ be picked up.</p>
+            <p> Key Issues:</p>
+            <ul>
+                <li><strong>Limited Resources:</strong>Organizations struggle to track illegal dumping while some items are too large for individuals to handle independently.</li>
+                <li><strong>Communication Gaps:</strong>Users don’t know who to contact regarding trash while also struggling to organize efficient cleanup operations.</li>
+                <li><strong>Inconvenience and Timing:</strong>Users are unable to report trash the moment they see it and forget by the time they return home.</li>
+                <li><strong>Complexity:</strong>Users contact organizations via email and social media yet those attempts often go unnoticed, requiring users to contact multiple organizations at a time. 
+            </ul>
+            
+            <h2> Customer and End User</h2>
+            <h3> Primary Users</h3>
+            <p><Strong> END USERS:</Strong> Community members such as hikers and beachgoers who encounter trash while participating in an outdoor activity and want to report it for cleanup. </p>
+            <h3> Secondary Users</h3>
+            <p><Strong> CUSTOMERS:</Strong> Cleanup organizations such as park services and waste management departments that plan for trash removal. </p>
+
+            <h2> Solution Statement</h2>
+            <p style = "text-align: justify;"> Provide the public a way of quickly communicating the scope and location of found litter, trash,
+ and dumping to organizations willing and interested in clean up. A system where users can
+ easily upload geotagged photos of litter or dumping, thus providing a map of areas to clean for
+ the city, volunteer organizations, or even motivated individuals so the trash could be removed
+ far more quickly and efficiently. The photos serve as easy visual identification of the trash as
+ well as the scope of the problem. Over time, the data can even be used for public education or
+ even city officials to dispatch people to problem areas as a preventative measure.</p>
+
+        </section>
+
+
 
         <section class="features">
             <h2>Features</h2>
@@ -284,16 +511,225 @@
     <div id="presentation" class="page">
         <section class="presentation-hero">
             <h1>Presentations</h1>
-            <p>Check out our presentations for CS410W and CS411W</p>
-        <div class="slide">
-            <h2>Our Presentation Slides</h2>
-            <p>View our detailed presentation below:</p>
-            <div style="position: relative; padding-bottom: 59.27%; height: 0; overflow: hidden; margin-top: 2rem;">
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQNwcjEzbl4-T91SM9CsikE7RbYovYY3nVfPm_tpJmoCdu_N91z5df8aaJtVJ-0vmcCIzf5JQDEXNcE/pubembed?start=false&loop=false&delayms=60000" 
-                frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
-                </iframe>
+            <p>Check out our presentations for CS410 and CS411W!</p>
+        </section>
+
+        <section class="presentation-content">
+        <div class="presentation-item">
+            <h3> Iteration 3</h3>
+            <div class="iframe-content">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQiR5stzQmhVqYYL-Kj2m0GJUIy6Hbv99CsVBmETre4hqiFx2vXT39N6vJOSjaAirwaP1CvJ9e5e_TL/pubembed?start=false&loop=false&delayms=3000" allowfullscreen="true"></iframe>
+
             </div>
+            <a href="Assets/Iteration3.pdf" class="presentation-link" target="_blank"> Presentation PDF</a>
         </div>
+            <div class="presentation-item">
+                <h3> Iteration 2</h3>   
+                <div class="iframe-content">
+                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQNwcjEzbl4-T91SM9CsikE7RbYovYY3nVfPm_tpJmoCdu_N91z5df8aaJtVJ-0vmcCIzf5JQDEXNcE/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+                </div>
+                <a href="Assets/Feasibility_Presentation_Team_Iron_Iteration_2.pdf" class="presentation-link" target="_blank"> Presentation PDF</a>
+            </div>
+
+            <div class="presentation-item">
+                <h3> Iteration 1</h3>
+                <div class="iframe-content">
+                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vStDUaS8d6CIPF5bXaF2556iNheb-Qi8CrBVoutRqoJ1hYzpLkyPrIsK4Kqno9hkjIMrPCundwS_yhI/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+                </div>
+                <a href="Assets/Feasibility_Presentation_Team_Iron_Iteration_1.pdf" class="presentation-link" target="_blank"> Presentation PDF</a>
+            </div>
+
+    </section>
+    </div>
+
+    <!-- Team Bio Page -->
+    <div id="team" class="page">
+    <section class="team-hero">
+        <h1>Meet Team Iron</h1>
+        <p> This Is Our Story </p>
+    </section>
+    <section class="team-content">
+        <div class="team-grid">
+        <div class="team-mem">
+            <div class="team-mem-image">
+                <img src="Profile_Pics/ScottProfilePic.jpg">
+            </div>
+            <h3>Scott Zumwalt</h3>
+            <p class="role">Team Lead</p>
+            <p> Scott is an experienced software developer and manager. After 15 years in the industry, he has returned to finish his Bachelor’s and then Master’s in Computer Science. With him at home are his wife, 4-year-old daughter, two cats, and a dog. While not doing school work or playing with his daughter, he is doing freelance writing for tabletop role playing games.</p>
+        </div>
+
+
+        <div class="team-mem">
+            <div class="team-mem-image">
+                <img src="Profile_Pics/SaraProfilePic.JPG">
+            </div>
+            <h3>Sara Perez</h3>
+            <p class="role">Front End Developer & Document Specialist</p>
+            <p>  Sara is a full-time computer science student at ODU. She completed her associates in engineering and hopes to obtain her masters in computer science in the near future.</p>
+        </div>
+        <div class="team-mem">
+            <div class="team-mem-image">
+                <img src="Profile_Pics/Emily_Profile_pic.jpg">
+            </div>
+            <h3>Emily Rick</h3>
+            <p class="role">Full Stack Developer</p>
+            <p> Emily is a full-time senior studying Computer Science at ODU. She plans to go on to obtain her Master’s degree in Computer Science after graduating with her Bachelor’s degree in May 2026.</p>
+        </div>
+        <div class="team-mem">
+            <div class="team-mem-image">
+                <img src="Profile_Pics/TeddyProfilePic.jpg">
+            </div>
+            <h3>Teddy Kovacs</h3>
+            <p class="role">Back End Developer & Database Design</p>
+            <p> Teddy is a full-time engineer and a computer science student at Old Dominion University. He completed his Bachelor’s of Arts in Music Performance from West Virginia University and enjoys merging his creativity with technical hobbies like woodworking, 3D printing, and exploring new technologies.</p>
+        </div>
+        <div class="team-mem">
+            <div class="team-mem-image">
+                <img src="Profile_Pics/Luca_Profile_Pic_JPG-version.jpg">
+            </div>
+            <h3>Luca Brooks</h3>
+            <p class="role">Back End Developer & Test Analyst</p>
+            <p> Luca is a published first author on an interdisciplinary paper in Computer Science and Human Factors Psychology. They are a senior in computer science with plans to do a master’s in computer science.</p>
+        </div>
+
+
+        <div class="team-mem">
+            <div class="team-mem-image">
+                <img src="Profile_Pics/AdamProfilePic.jpg">
+            </div>
+            <h3>Adam Daif</h3>
+            <p class="role">Full Stack Developer & GIS Specialist</p>
+            <p> Adam is currently a full-stack web developer at Vivian Contracting LLC. In addition to CS, he is doing a minor in data science and plans to pursue a master’s in computational analytics.</p>
+        </div>
+        <div class="team-mem">
+            <div class="team-mem-image">
+                <img src="Profile_Pics/RyanProfilePic.jpg">
+            </div>
+            <h3>Ryan Fee</h3>
+            <p class="role">Full Stack Developer</p>
+            <p> Ryan is an undergraduate computer science student at ODU. He plans to graduate in May 2026.
+</p>
+        </div>
+        </div>
+
+    </section>
+    </div>
+    <div id="references" class="page">
+        <section class="hero">
+            <h1>References</h1>
+            <p>Trashtag Reference Material</p>
+        </section>
+
+        <section class="trashtag-section">
+            <div class="reference-item">
+                <p><strong>[1]</strong>“Volunteers Gather Over 16,000 Pounds of Trash from the San Marcos River.” Corridor News, 13 Apr. 2020, https://smcorridornews.com/volunteers-gather-over-16000-pounds-of-trash-from-the-san-marcos-river/</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[2]</strong>Fawaz, Maya. “Hundreds of Volunteers will fan out on San Marcos waterways Saturday to clean up trash.” Kut News, 3 Mar. 2023, https://www.kut.org/energy-environment/2023-03-03/hundreds-of-volunteers-will-fan-out-on-san-marcos-waterways-saturday-to-clean-up-trash</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[3]</strong>“54th San Marcos River Rendezvous Clean Up.” Texas Rivers Protection Association, https://txrivers.org/texas-river-blog/54th-san-marcos-river-rendezvous-clean-up/. Accessed 23 Sept. 2025.</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[4]</strong>Mendoza, Madalyn. “San Marcos River litter 2018.” My San Antonio, 31 May 2018, https://www.mysanantonio.com/news/local/slideshow/San-Marcos-River-litter-2018-181939.php</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[5]</strong>Earth Day. “How Our Trash Impacts the Environment.” EarthDay.org, updated 22 Sept. 2025, www.earthday.org/how-our-trash-impacts-the-environment/.Accessed 30 Sept. 2025.</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[6]</strong>thomas. “How Does Littering Affect the Environment?” Texas Disposal Systems, 1 Feb. 2024, https://www.texasdisposal.com/blog/the-real-cost-of-littering/.</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[7]</strong>“On This 52nd Annual Earth Day, What Is the State of Litter in Virginia?” VPM, 22 Apr. 2022, https://www.vpm.org/news/2022-04-21/on-this-52nd-annual-earth-day-what-is-the-state-of-litter-in-virginia.</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[8]</strong>“Cleaning Litter along Arkansas Roads Costs Millions in Taxpayer Money.” Thv11.Com, 28 Oct. 2021, https://www.thv11.com/article/news/education/arkansas/litter-costs-arkansas-taxpayers-millions/91-38fe040f-82c7-4698-a34a-d8cf7d77de34</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[9]</strong>Garza, Ariana. “More than $40 Million Taxpayer Dollars Spent Annually on Texas Litter Cleanup.” KTXS, 25 Mar. 2014, https://ktxs.com/news/abilene/more-than-40-million-taxpayer-dollars-spent-annually-on-texas-litter-cleanup_20160517100457192.</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[10]</strong>Picking up Litter: Pointless Exercise or Powerful Tool in the Battle to Beat Plastic Pollution?, 2018, www.unep.org/news-and-stories/story/picking-litter-pointless-exercise-or-powerful-tool-battle-beat-plastic.</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[11]</strong>Lara. “The Economics of Litter.” Keep Texas Beautiful, 10 Oct. 2024, ktb.org/ktb-blog/the-economics-of-litter/#:~:text=Infrastructure%20Impacts,million%20deficit%20in%20infrastructure%20investments.
+                </p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[12]</strong>“How Litter Harms Humans, Animals, and the Environment.” Fire & Ice, https://indoortemp.com/resources/how-litter-harms-humans-animals-environment. Accessed 12 Oct. 2025.</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[13]</strong>Campbell, Marnie L., et al. “Human Health Impacts from Litter on Beaches and Associated Perceptions: A Case Study of ‘Clean’ Tasmanian Beaches.” Ocean & Coastal Management, vol. 126, Jun. 2016, pp. 22–30. ScienceDirect, https://doi.org/10.1016/j.ocecoaman.2016.04.002</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[14]</strong>Blouin, Lou. “The Psychology of Littering.” The Allegheny Front, 8 Jan. 2016, https://www.alleghenyfront.org/the-psychology-of-littering/.</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[15]</strong>Litter in America Results from the Nation’s Largest Litter Study, www.hampton.gov/DocumentCenter/View/308/litter-factsheet-costs?bidId=. Accessed 12 Oct. 2025.</p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[16]</strong>How to Reduce Litter In Your Parks, https://www.miracle-recreation.com/blog/reduce-litter-in-parks/
+                </p>
+            </div>
+
+            <div class="reference-item">
+                <p><strong>[17]</strong>The Economics of Litter, https://ktb.org/ktb-blog/the-economics-of-litter/</p>
+            </div>
+
+
+        </section>
+    </div>
+
+    <div id="glossary" class="page">
+        <section class="hero">
+        <h1>Glossary</h1>
+        <p>Key Terms and their respective defintions </p>
+        </section>
+
+        <section class="trashtag-section">
+            <div class="glossary-item">
+                <div class="glossary-term">Illegal Dumping</div>
+                <p>The unauthorized disposal of trash and other hazardous materials onto private and or public property.</p>
+            </div>
+
+            <div class="glossary-item">
+                <div class="glossary-term">Metadata</div>
+                <p>Descriptive information within data files such as date, location, and timestamp data in photos to be submitted to Trashtag. </p>
+            </div>
+
+            <div class="glossary-item">
+                <div class="glossary-term">Geotagging</div>
+                <p> The addition of GPS coordinates to images that enable precise location identification where trash was reported.</p>
+            </div>
+
+            <div class="glossary-item">
+                <div class="glossary-term">Live Real-Time Updates</div>
+                <p>Live data synchronization displaying trash reports to both users and cleanup organizations instantaneously.</p>
+            </div>
+
+            <div class="glossary-item">
+                <div class="glossary-term">Gamification</div>
+                <p>The incorporation of game-like mechanics such as rankings to motivate user participation and skyrocket cleanup operations.</p>
+            </div>
+
         </section>
     </div>
 
@@ -307,6 +743,16 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
+    <footer class="footer-links">
+        <p>
+            <a href="https://www.odu.edu/" target="_blank">Old Dominion University</a>
+        </p>
+        <p>
+            <a href="https://www.odu.edu/computer-science" target="_blank">Old Dominion University - Computer Science Department</a>
+        </p>
+        <p style ="margin-top: 1.5rem; opacity: 0.7;" > Copyright 2025 Team Iron: TrashTag</p>
+
+    </footer>
 </body>
 
 </html>
